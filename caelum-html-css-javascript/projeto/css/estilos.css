@@ -1,0 +1,22 @@
+body{
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-style: normal;
+}
+
+p{
+	text-align: justify;
+	line-height: 30px; /* altura de cada linha*/
+	letter-spacing: 4px; /* espaçamento entre cada letra*/
+	word-spacing: 20px; /*espaçamento entre cada palavra*/
+	text-indent: 30px; /* tamanho da margem da primeira linha do texto*/
+}
+
+h1{
+	background-image: url(../img/sobre-background.jpg);
+}
+
+body{
+	border-color: red;
+	border-style: solid;
+	border-width: 2px;	
+}

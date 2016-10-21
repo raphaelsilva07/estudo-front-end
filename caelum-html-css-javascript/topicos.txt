@@ -1,0 +1,124 @@
+-----------------------------------
+Caelum - HTML, CSS e JavaScript
+-----------------------------------
+
+------------------------------------
+|				HTML 				|
+------------------------------------
+Tags HTML
+-----------------------------------
+Titulos - <h1> ... <h6>
+	
+Paragrafos - <p></p>
+	
+Marcações de Enfase - <strong> | <em> | <small> | <b> | <i>
+	
+Imagens 
+	<img src="html.png" alt="html5-logo">
+	
+	<figure>
+		<img src="html.png" alt="html5-logo">
+		<figcaption>HTML5 Logo</figcaption>
+	</figure>
+
+-----------------------------------
+Listas HTML
+
+	<!-- LISTA NÃO ORDENADA -->
+	<ul>
+		<li>Primeiro item da lista</li>
+		<li>
+			Segundo item da lista:
+			<ul>
+				<li>Primeiro item da lista aninhada</li>
+				<li>Segundo item da lista aninhada</li>
+			</ul>
+		</li>
+		<li>Terceiro item da lista</li>
+	</ul>
+
+	<!-- LISTA ORDENADA -->
+	<ol>
+		<li>Primeiro item da lista</li>
+		<li>Segundo item da lista</li>
+		<li>Terceiro item da lista</li>
+		<li>Quarto item da lista</li>
+		<li>Quinto item da lista</li>
+	</ol>
+
+	<!-- LISTA DE DEFINIÇÃO -->
+	<dl>
+		<dt>HTML</dt>
+		<dd>HTML é a linguagem de marcação de texto utilizada para exibir textos como paginas na Internet</dd>
+		<dt>Navegador</dt>
+		<dd>Navegador é o software que requisita um documento HTML através do protocolo HTTP e exibe seu conteúdo em uma janela.</dd>
+	</dl>
+
+-----------------------------------
+Links HTML
+	
+-----------------------------------
+
+
+
+
+------------------------------------
+|				CSS 				|
+------------------------------------
+Inclusão do CSS 
+	Style -> 
+		<style>
+			p{
+				background-color: yellow;
+				color: blue;
+			}
+		</style>
+
+	Externo
+		<link rel="stylesheet" href="css/estilos.css">
+
+-----------------------------------
+Propriedades tipograficas e fontes
+	color:blue;
+	background-color:yellow;
+	font-family: "Arial", "Helvetica", serif, sans-serif, monospace;
+	font-style: normal | italic | oblique;
+
+-----------------------------------
+Alinhamento e decoração de texto
+	text-align: left | right | center | justify; /* alinhamento do texto*/
+	line-height: 30px; /* altura de cada linha*/
+	letter-spacing: 4px; /* espaçamento entre cada letra*/
+	word-spacing: 20px; /*espaçamento entre cada palavra*/
+	text-indent: 30px; /* tamanho da margem da primeira linha do texto*/
+
+-----------------------------------
+Imagem de fundo
+	background: gold;
+	background-image: url(../img/sobre-background.jpg);
+
+-----------------------------------
+Bordas
+	border-color: red;
+	border-style: solid | dashed | dotted | double | groove;
+	border-width: 2px;
+	border-bottom: 2px solid  #333;
+
+-----------------------------------
+Cores na Web
+	color: rgb(255,222, 0);
+	background: #36F;
+	
+-----------------------------------
+Espaçamento e Margem
+	padding: 10px 30px 50px 80px; /* espaçamento */
+
+	margin: 10px 30px 50px 80px;
+	margin: 0 auto;
+
+-----------------------------------
+Dimensões
+	height: 100px;
+	width: 100px;
+
+-----------------------------------
