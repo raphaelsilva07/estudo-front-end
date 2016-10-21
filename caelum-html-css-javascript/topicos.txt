@@ -2,24 +2,23 @@
 Caelum - HTML, CSS e JavaScript
 -----------------------------------
 
-------------------------------------
-|				HTML 				|
-------------------------------------
+====================================
+				HTML 				
+====================================
 Tags HTML
------------------------------------
-Titulos - <h1> ... <h6>
+	Titulos - <h1> ... <h6>
 	
-Paragrafos - <p></p>
+	Paragrafos - <p></p>
 	
-Marcações de Enfase - <strong> | <em> | <small> | <b> | <i>
+	Marcações de Enfase - <strong> | <em> | <small> | <b> | <i>
 	
-Imagens 
-	<img src="html.png" alt="html5-logo">
-	
-	<figure>
+	Imagens 
 		<img src="html.png" alt="html5-logo">
-		<figcaption>HTML5 Logo</figcaption>
-	</figure>
+		
+		<figure>
+			<img src="html.png" alt="html5-logo">
+			<figcaption>HTML5 Logo</figcaption>
+		</figure>
 
 -----------------------------------
 Listas HTML
@@ -62,11 +61,11 @@ Links HTML
 
 
 
-------------------------------------
-|				CSS 				|
-------------------------------------
+====================================
+				CSS 				
+====================================
 Inclusão do CSS 
-	Style -> 
+	CSS Interno 
 		<style>
 			p{
 				background-color: yellow;
@@ -74,7 +73,7 @@ Inclusão do CSS
 			}
 		</style>
 
-	Externo
+	CSS Externo
 		<link rel="stylesheet" href="css/estilos.css">
 
 -----------------------------------
