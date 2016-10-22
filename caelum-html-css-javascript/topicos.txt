@@ -164,5 +164,29 @@ Fluxo de documento e float
 Cap.3 - HTML semântico e posicionamento no CSS
 ===============================================
 
+Estrutura da pagina
+	<header>
+		<!-- Conteudo do cabeçalho -->
+	</header>
+
+	<section>
+		<!-- Conteudo principal -->
+	</section>
+
+	<footer>
+		<!--Conteudo do rodape -->
+	</footer>
+
+-----------------------------------------------
+CSS Reset
+
+	HTML5 Boilerplate
+		https://html5boilerplate.com/
+
+	EricMeyer CSS Reset
+		http://meyerweb.com/eric/tools/css/reset/
+
+-----------------------------------------------
+Block VS. Inline
 
 -----------------------------------------------
