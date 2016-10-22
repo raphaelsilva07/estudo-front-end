@@ -1,11 +1,12 @@
------------------------------------
+================================================
 Caelum - HTML, CSS e JavaScript
------------------------------------
+================================================
 
-====================================
-				HTML 				
-====================================
+================================================
+HTML - HyperText Markup Language
+================================================
 Tags HTML
+
 	Titulos - <h1> ... <h6>
 	
 	Paragrafos - <p></p>
@@ -20,7 +21,7 @@ Tags HTML
 			<figcaption>HTML5 Logo</figcaption>
 		</figure>
 
------------------------------------
+-----------------------------------------------
 Listas HTML
 
 	<!-- LISTA NÃO ORDENADA -->
@@ -53,17 +54,31 @@ Listas HTML
 		<dd>Navegador é o software que requisita um documento HTML através do protocolo HTTP e exibe seu conteúdo em uma janela.</dd>
 	</dl>
 
------------------------------------
+-----------------------------------------------
 Links HTML
-	
------------------------------------
+	Links externos 
+		<a href="http://www.google.com" target="_blank">Google</a>
+		
+	->target
+		_blank - Opens the linked document in a new window or tab
+		_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+		_parent - Opens the linked document in the parent frame
+		_top - Opens the linked document in the full body of the window 
+		framename - Opens the linked document in a named frame
+
+	Navegação na propria pagina
+		<p>Mais informações <a href="#info">aqui</a>.</p>
+		<p>Conteúdo da página... </p>
+
+		<h2 id="info">Mais informações sobre o assunto:</h2>
+		<p>Informações...</p>
+
+-----------------------------------------------
 
 
-
-
-====================================
-				CSS 				
-====================================
+================================================
+CSS - Cascade Style Sheet
+================================================
 Inclusão do CSS 
 	CSS Interno 
 		<style>
@@ -76,14 +91,14 @@ Inclusão do CSS
 	CSS Externo
 		<link rel="stylesheet" href="css/estilos.css">
 
------------------------------------
+-----------------------------------------------
 Propriedades tipograficas e fontes
 	color:blue;
 	background-color:yellow;
 	font-family: "Arial", "Helvetica", serif, sans-serif, monospace;
 	font-style: normal | italic | oblique;
 
------------------------------------
+-----------------------------------------------
 Alinhamento e decoração de texto
 	text-align: left | right | center | justify; /* alinhamento do texto*/
 	line-height: 30px; /* altura de cada linha*/
@@ -91,33 +106,63 @@ Alinhamento e decoração de texto
 	word-spacing: 20px; /*espaçamento entre cada palavra*/
 	text-indent: 30px; /* tamanho da margem da primeira linha do texto*/
 
------------------------------------
+-----------------------------------------------
 Imagem de fundo
 	background: gold;
 	background-image: url(../img/sobre-background.jpg);
 
------------------------------------
+-----------------------------------------------
 Bordas
 	border-color: red;
 	border-style: solid | dashed | dotted | double | groove;
 	border-width: 2px;
 	border-bottom: 2px solid  #333;
 
------------------------------------
+-----------------------------------------------
 Cores na Web
 	color: rgb(255,222, 0);
 	background: #36F;
 	
------------------------------------
+-----------------------------------------------
 Espaçamento e Margem
 	padding: 10px 30px 50px 80px; /* espaçamento */
 
 	margin: 10px 30px 50px 80px;
 	margin: 0 auto;
 
------------------------------------
+-----------------------------------------------
 Dimensões
 	height: 100px;
 	width: 100px;
 
------------------------------------
+-----------------------------------------------
+CSS: seletores de ID e filho
+	
+Seletor de ID
+	#cabecalho {
+		color: white;
+		text-align: center;
+	}
+
+Seletor hierarquico
+	#rodape img {
+		margin-right: 35px;
+		vertical-align: middle;
+		width: 94px;
+	}
+
+-----------------------------------------------
+Fluxo de documento e float
+	#familia{
+		vertical-align: middle;
+		float: right;
+	}
+
+-----------------------------------------------
+
+===============================================
+Cap.3 - HTML semântico e posicionamento no CSS
+===============================================
+
+
+-----------------------------------------------
