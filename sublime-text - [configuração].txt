@@ -1,0 +1,26 @@
+---------------------------------------
+			Sublime Text 3
+---------------------------------------
+https://packagecontrol.io/installation
+---------------------------------------
+Key Bindings
+[
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+shift+u"], "command": "upper_case" },
+	{ "keys": ["ctrl+u"], "command": "lower_case" },
+]
+
+---------------------------------------
+Atalhos
+	Abrir SideBar = Ctrl + K + B
+	Duplicar linha = Ctrl + D
+	Deletar linha = Ctrl + Shift + Backspace
+	UpperCase = Ctrl + Shift + U
+	LowerCase = Ctrl + U
+
+---------------------------------------
+Emmet
+AutoFileName
+SideBarEnhancements
+Color Highlighter
+---------------------------------------
