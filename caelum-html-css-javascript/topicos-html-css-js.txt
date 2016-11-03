@@ -151,6 +151,11 @@ Seletor hierarquico
 		width: 94px;
 	}
 
+Seletor de Class
+	.menu-opcoes ul{
+		font-size: 15px;
+	}
+
 -----------------------------------------------
 Fluxo de documento e float
 	#familia{
@@ -188,5 +193,63 @@ CSS Reset
 
 -----------------------------------------------
 Block VS. Inline
+
+ul li {
+	display: inline; // block
+}
+
+-----------------------------------------------
+Position: static, relative, absolute, fixed
+
+Relative
+	.logotipo {
+		position: relative;
+		top: 20px;
+		left: 50px;
+	}
+
+Absolute - herda referencia do elemento pai
+	.logotipo {
+		position: absolute;
+		top: 20px;
+		left: 50px;
+	}
+
+----------------------
+Static
+	- Sua posição é dada automaticamente pelo fluxo da página: por padrão ele é renderizado logo após seus irmãos
+	- Não aceita um posicionamento manual (left, right, top, bottom)
+	- O tamanho do seu elemento pai leva em conta o tamanho do elemento static
+
+Relative
+	- Por padrão o elemento será renderizado da mesma maneira que o static
+	- Aceita posicionamento manual
+	- O tamanho do seu elemento pai leva em conta o tamanho do elemento relative, porém sem levar em conta seu posicionamento. O pai não sofreria alterações mesmo se o elemento fosse static.
+
+Absolute
+	- Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é obrigatória
+	- O elemento será renderizado na posição indicada, porém relativa ao primeiro elemento pai cujo position seja diferente de static ou, se não existir este pai, relativa à página
+	- Seu tamanho não conta para calcular o tamanho do elemento pai
+
+Fixed
+	- Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é obrigatória
+	- O elemento será renderizado na página na posição indicada: mesmo que ocorra uma rolagem o elemento permanecerá no mesmo lugar
+	- Seu tamanho não conta para calcular o tamanho do elemento pai, é como se não fosse elemento filho
+
+-----------------------------------------------
+Suporte HTML5 no Internet Explorer antigo
+
+https://github.com/afarkas/html5shiv
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+-----------------------------------------------
+
+===============================================
+Cap.4 - Mais HTML e CSS
+===============================================
+
 
 -----------------------------------------------
