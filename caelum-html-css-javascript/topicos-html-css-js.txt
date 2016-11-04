@@ -195,7 +195,7 @@ CSS Reset
 Block VS. Inline
 
 ul li {
-	display: inline; // block
+	display: inline; /* block */
 }
 
 -----------------------------------------------
@@ -250,6 +250,54 @@ https://github.com/afarkas/html5shiv
 ===============================================
 Cap.4 - Mais HTML e CSS
 ===============================================
+
+Formularios - search, image, submit
+
+<form>
+	<input type="search">
+	<input type="image" src="img/busca.png">
+</form>
+
+-----------------------------------------------
+Posicionamento com Float e Clear
+
+.busca, .menu-departamentos {
+	float: left;
+}
+
+.menu-departamentos {
+	clear: left; /* left, right, both */
+}
+
+-----------------------------------------------
+Transformação de texto
+
+- uppercase - Todas as letras em maiúsculo;
+- lowercase - Todas as letras em minúsculo;
+- capitalize - Só as primeiras letras das palavras em maiúsculo.
+
+.menu-departamentos {
+	text-transform: uppercase;
+}
+
+Decoração de texto
+
+.item-menu{
+	text-decoration: none; /*none, underline, overline, line-through, blink*/
+}
+
+-----------------------------------------------
+Cascata e Herança no CSS
+
+- Elementos que não são herdados:
+	width, height, margin, padding
+
+Valor ihnerit - Herança
+	Pai -> Filho
+
+-----------------------------------------------
+Display inline-block
+
 
 
 -----------------------------------------------
