@@ -298,6 +298,65 @@ Valor ihnerit - Herança
 -----------------------------------------------
 Display inline-block
 
+.painel li {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	margin: 2px;
+	padding-bottom: 10px;
+}
 
+-----------------------------------------------
+Seletores de atributos no CSS3
+
+- O seletor acima age em todos os elementos da tag <input> 
+que têm o atributo “value”.
+input[value] {
+	color: #cc0000;
+}
+
+- O seletor verifica se o atributo tem um valor especifico
+input[type="text"] {
+	border-radius: 4px;
+}
+
+- Seletor de atributo com prefixo vai agir em todas as tags <div> cujo atributo “class” comece com a palavra 
+menu seguida de um hífen e qualquer outro valor na sequência, como por exemplo menu-principal
+div[class|="menu"] {
+	border-radius: 4px;
+}
+
+- Também é possível buscar por uma palavra especíca no valor, não importando o valor completo do atributo
+input[value~="problema"] {
+	color: #cc0000;
+}
+
+- Atraves de expressões regulares
+/* busca por inputs com valor de "name" iniciando em "usuario" */
+input[name^="usuario"] {
+	color: 99ffcc;
+}
+
+/* busca por inputs com valor de "name" terminando em "teste" */
+input[name$="teste"] {
+	background-color: #ccff00;
+}
+
+/* busca por inputs com valor do atributo "name"
+contendo "tela" em qualquer posição */
+input[name*="tela"] {
+	color: #666666;
+}
+
+-----------------------------------------------
+Rodape - <footer></footer>
+
+Image Replacement
+
+-----------------------------------------------
+
+===============================================
+Cap.5 - CSS Avançado
+===============================================
 
 -----------------------------------------------
