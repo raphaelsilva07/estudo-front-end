@@ -224,3 +224,79 @@ footer .container{
 	float: left;
 	margin-left: 25px;
 }
+
+/* ========================================== */
+/* Seletores e Pseudo-Classes */
+/* ========================================== */
+
+.menu-opcoes a:hover{
+	color: #007dc6;
+}
+
+.menu-opcoes a:active{
+	color: #867dc6;
+}
+
+/* menu retratil em CSS */
+.menu-departamentos li ul{ /* ocultando sublista */
+	display: none;
+}
+
+.menu-departamentos li:hover ul{ /* exibindo sublista */
+	display: block;
+}
+
+.menu-departamentos ul ul li {
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before{
+	content: '> ';
+}
+
+/* exercicios opcionais - unicode */
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 10px;
+}
+
+.painel h2:before {
+	content: '\2756';
+	padding-right: 10px;
+	opacity: 0.4;
+}
+
+/* ========================================== */
+/* Estilização em CSS3 */
+/* ========================================== */
+
+.painel{
+	border-radius: 10px;
+	box-shadow: 1px 1px 4px #999;
+	/*box-shadow: inset 1px 1px 4px #999; /* sombra interna */
+}
+
+.painel h2{
+	text-shadow: 3px 3px 4px #999;
+}
+
+.busca {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+/* Faça a sombra do título do painel um branco 
+com 80% de opacidade */
+.painel h2 {
+	text-shadow: 1px 1px 2px rgba(255,255,200,0.8);
+}
+
+.novidades {
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos {
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}

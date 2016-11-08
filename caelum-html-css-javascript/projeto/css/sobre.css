@@ -9,6 +9,11 @@
 	
 }
 
+/* tamanho da margem da primeira linha do texto */
+p{
+	text-indent: 30px;
+}
+
 .sacola{
 	background: url(../img/sacola.png) no-repeat top right;
 	font-size: 14px;
@@ -202,3 +207,33 @@ footer .container{
 	float: left;
 	margin-left: 25px;
 }
+
+/* ========================================== */
+/* Seletores e Pseudo-Classes */
+/* ========================================== */
+
+/* definir negrito na primeira letra de cada paragrafo */
+p:first-letter{
+	font-weight: bold;
+}
+
+/* remover a identação apenas do primeiro paragrafo*/
+h1 + p {
+	text-indent: 0;
+}
+
+/* altera o visual da primeira linha do texto */
+p:first-line{
+	font-variant: small-caps;
+}
+
+/* exercicios opcionais */
+/* as primeiras linhas dos parágrafos que 
+não são precedidos por outros parágrafos. */
+:not(p) + p:first-line {
+	font-variant: small-caps;
+}
+
+/* ========================================== */
+/* Seletores e Pseudo-Classes */
+/* ========================================== */

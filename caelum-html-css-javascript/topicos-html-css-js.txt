@@ -309,35 +309,41 @@ Display inline-block
 -----------------------------------------------
 Seletores de atributos no CSS3
 
-- O seletor acima age em todos os elementos da tag <input> 
-que têm o atributo “value”.
+/* O seletor acima age em todos os elementos da 
+tag <input> que têm o atributo “value”. */
 input[value] {
 	color: #cc0000;
 }
 
-- O seletor verifica se o atributo tem um valor especifico
+/* O seletor verifica se o atributo tem um 
+valor especifico */
 input[type="text"] {
 	border-radius: 4px;
 }
 
-- Seletor de atributo com prefixo vai agir em todas as tags <div> cujo atributo “class” comece com a palavra 
-menu seguida de um hífen e qualquer outro valor na sequência, como por exemplo menu-principal
+/* Seletor de atributo com prefixo vai agir em todas 
+as tags <div> cujo atributo “class” comece com a palavra 
+menu seguida de um hífen e qualquer outro valor 
+na sequência, como por exemplo menu-principal */
 div[class|="menu"] {
 	border-radius: 4px;
 }
 
-- Também é possível buscar por uma palavra especíca no valor, não importando o valor completo do atributo
+/* Também é possível buscar por uma palavra especíca 
+no valor, não importando o valor completo do atributo */
 input[value~="problema"] {
 	color: #cc0000;
 }
 
 - Atraves de expressões regulares
-/* busca por inputs com valor de "name" iniciando em "usuario" */
+/* busca por inputs com valor de "name" 
+iniciando em "usuario" */
 input[name^="usuario"] {
 	color: 99ffcc;
 }
 
-/* busca por inputs com valor de "name" terminando em "teste" */
+/* busca por inputs com valor de "name" 
+terminando em "teste" */
 input[name$="teste"] {
 	background-color: #ccff00;
 }
@@ -358,5 +364,231 @@ Image Replacement
 ===============================================
 Cap.5 - CSS Avançado
 ===============================================
+
+Seletores Avançados
+
+/* Seletores Irmãos */
+h2 ~ p{
+	font-style: italic;
+}
+
+/* Seletores Irmãos Adjacentes */
+h2 + p{
+	color: red;
+	font-variant: small-caps;
+}
+
+/* Seletor de Filho Direto */
+article > h1{
+	color: blue;
+}
+
+/* Negação */
+p:not(.especial){
+	color: pink;
+}
+
+-----------------------------------------------
+Pseudo-classes
+
+/* primeiro */
+li:first-child{ 
+	color: red;
+}
+
+/* ultimo */
+li:last-child{
+	color:blue;
+}
+
+/* indice */
+li:nth-child(2n) { /* elementos pares */
+	color: green; 
+} 
+
+li:nth-child(2n+1) {  /* elementos impares */
+	color: blue; 
+}
+
+-----------------------------------------------
+Pseudo-classes de estado
+
+/* seleciona o link no exato momento em que 
+passamos o mouse por cima dele */
+a:hover{
+	background-color: #F0F;
+}
+
+/* seleciona todas as âncoras que têm o 
+atributo "href", ou seja, links */
+a:link{
+	background-color: #F00;
+}
+
+/* seleciona todos os links cujo valor 
+de "href" é um endereço já visitado */
+a:visited {
+	background-color:#00FF00;
+}
+
+/* seleciona o link no exato momento 
+em que clicamos nele */
+a:active {
+	background-color:#0000FF;
+}
+
+-----------------------------------------------
+Pseudo Elementos
+
+/* estiliza apenas a primeira letra da frase*/
+p:first-letter {
+	font-size: 200%;
+}
+
+/* estiliza apenas a primeira linha em um texto grande */
+p:first-line {
+	font-style: italic;
+}
+
+/* estiliza o começo e o final do conteudo da tag */
+a:before {
+	content: '[ ';
+}
+
+a:after {
+	content: ' ]';
+}
+
+/* pega todos os elementos que a que começam 
+com http:// e coloca a palavra externo depois */
+a[href^=http://]:after{
+	content: ' (externo) ';
+}
+-----------------------------------------------
+CSS3 - Border Radius
+
+/* todas as bordas arredondadas com um raio de 15px */
+div {
+	border-radius: 5px;
+}
+
+/*
+ * borda superior esquerda com 5px
+ * borda superior direita com 20px
+ * borda inferior direita com 50px
+ * bordar inferior esquerda com 100px 
+ */
+.d{
+	border-radius: 5px 20px 50px 100px;
+}
+
+-----------------------------------------------
+CSS3 - Text Shadow
+
+/* recebe o deslocamento da sombra e sua cor */
+p {
+	text-shadow: 10px 10px red;
+}
+
+/* ou ainda receber um grau de espalhamento (blur): */
+p {
+	text-shadow: 10px 10px 5px red;
+}
+
+-----------------------------------------------
+CSS3 - Box Shadow
+
+/* sombras em qualquer elemento */
+.caixa{
+	box-shadow: 20px 20px black;
+}
+
+/* Podemos ainda passar um terceiro valor com o blur */
+.caixa {
+	box-shadow: 20px 20px 20px black;
+}
+
+/* o box-shadow suporta um valor que faz 
+a sombra aumentar ou diminuir*/
+.caixa{
+	box-shadow: 20px 20px 20px 30px black;
+}
+
+/* é possível usar a keyword inset para uma 
+borda interna ao elemento*/
+.caixa {
+	box-shadow: inset 0 0 40px black;
+}
+
+-----------------------------------------------
+Opacidade e RGBA
+
+/* opacity que recebe um valor decimal entre 0 e 1 */
+p {
+	opacity: 0.3;
+}
+
+/* branco com 80% de opacidade */
+p{
+	color: rgba(255,255,255, 0.8);
+}
+
+-----------------------------------------------
+Prefixos
+
+• -webkit-: navegadoresWebkit (Chrome, Safari, iOS, Android)
+• -moz-: Firefox (Mozilla)
+• -ms-: Internet Explorer (Microsoft)
+• -o-: Opera
+
+p {
+	/* Chrome até versão 3, Safari até versão 4 */
+	-webkit-border-radius: 5px;
+
+	/* Firefox até 3.6 */
+	-moz-border-radius: 5px;
+
+	/* Todas as versões modernas dos navegadores,
+	incluindo IE e Opera que nunca precisaram de
+	prefixo pra isso */
+	border-radius: 5px;
+}
+
+-----------------------------------------------
+CSS3 - Gradientes
+
+.linear {
+	background: linear-gradient(white, blue);
+}
+
+.radial {
+	background: radial-gradient(white, blue);
+}
+
+/* gradientes com angulações diferentes e diversas paradas de cores */
+.gradiente {
+	background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+}
+
+/* prefixos */
+.linear {
+	background: linear-gradient(to bottom, white, blue);
+	P
+}
+
+/* geração de gradientes - caso o navegador 
+não carregue o gradiente, ele então exibirá 
+um fundo substituto*/
+.gradiente {
+	background: #cbebff;
+	background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+}
+
+/* Ultimate CSS Gradient Generator da ColorZilla */
+http://www.colorzilla.com/gradient-editor/
+
+-----------------------------------------------
+CSS3 - Transitions
+
 
 -----------------------------------------------

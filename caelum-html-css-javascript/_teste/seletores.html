@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- CSS -->
+	<style>
+		/* seletores irmãos */
+		h2 ~ p{
+			font-style: italic;
+		}
+
+		/* seletor de irmão adjacente */
+		h2 + p{
+			color: red;
+			font-variant: small-caps;
+		}
+
+		/* seletor de filho direto */
+		article > h1{
+			color: blue;
+		}
+
+		/* negação */
+		p:not(.especial){
+			color: pink;
+		}
+}
+	</style>
+
+	<!-- Seletor de Irmãos -->
+	<h1>Titulo</h1>
+	<p>Inicio</p>
+
+	<h2>Subtitulo</h2>
+	<p>Texto</p>
+	<p>Mais Texto</p>
+
+	<!-- Seletor de Filho Direto -->
+	<br>
+	<article>
+		<h1>Titulo principal</h1>
+		<section>
+			<h1>Titulo da seção</h1>
+		</section>
+	</article>
+
+	<!-- Negação -->
+	<br>
+	<p>Texto</p>
+	<p>Outro texto</p>
+	<p class="especial">Texto especial</p>
+	<p>Mais texto</p>
+
+</body>
+</html>

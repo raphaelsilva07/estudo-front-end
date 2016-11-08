@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<!-- CSS -->
+	<style>
+		/* primeiro */
+		li:first-child{
+			color: red;
+		}
+
+		/* segundo */
+		li:last-child{
+			color:blue;
+		}
+
+		/* indice */
+		.especial ul li:nth-child(2n) { /* elementos pares */
+			color: yellow;
+			background-color: blue; 
+			width: 50px;
+		} 
+
+		.especial ul li:nth-child(2n+1) {  /* elementos impares */
+			color: white; 
+			background-color: black;
+			width: 50px;
+		}
+
+	</style>
+
+	<!-- Pseudo-classes -->
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ul>
+
+	<!-- Indice -->
+	<section class="especial">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
+	</section>
+
+</body>
+</html>
